@@ -35,9 +35,9 @@ Apache NiFi는 아파치 소프트웨어 재단의 오픈소스( https://nifi.ap
 ## how to install
 ### NiFi standalone install
 - HTTP용 : nifi-1.9.0-standalone-wini.tar 파일을 다운로드하고 압축을 해제
-    - HTTP용 : [Standalone/nifi-1.9.0-standalone-wini.tar](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/Standalone/nifi-1.9.0-standalone-wini.tar)
-    - HTTPS용 : [Standalone_tls/nifi-1.9.0-standalone-wini.tar](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/Standalone_tls/nifi-1.9.0-standalone-wini.tar)
-      - HTTPS용은 인증서를 생성해야 함. [인증서 생성방법](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/Standalone_tls/README.md)
+    - HTTP용 : [Standalone/nifi-1.9.0-standalone-wini.tar](http://github.com/sokangmin/wini-nifi/blob/master/Standalone/nifi-1.9.0-standalone-wini.tar)
+    - HTTPS용 : [Standalone_tls/nifi-1.9.0-standalone-wini.tar](http://github.com/sokangmin/wini-nifi/blob/master/Standalone_tls/nifi-1.9.0-standalone-wini.tar)
+      - HTTPS용은 인증서를 생성해야 함. [인증서 생성방법](http://github.com/sokangmin/wini-nifi/blob/master/Standalone_tls/README.md)
 - NiFi 실행
     - Windows
       - NiFi 설치 디렉토리/bin/nifi.bat을 더블클릭한다.
@@ -47,7 +47,7 @@ Apache NiFi는 아파치 소프트웨어 재단의 오픈소스( https://nifi.ap
     - NiFi에 접속하여 화면이 정상적으로 표시되는지 확인
       - HTTP용 : http://localhost:8080/nifi
       - HTTPS용 : https://localhost:8443/nifi<br/> 
-        * [https로그인 방법](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/docs/tutorial_conf.md#https-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
+        * [https로그인 방법](http://github.com/sokangmin/wini-nifi/blob/master/docs/tutorial_conf.md#https-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
 - NiFi 정지
     - Windows
       - Ctrl-c를 실행한다.
@@ -66,10 +66,10 @@ Apache NiFi는 아파치 소프트웨어 재단의 오픈소스( https://nifi.ap
      
 
 ### how to use
-- [기본개념 및 컨셉](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/docs/concept.md)
-- [기본사용법](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/docs/tutorial_use.md)
-- [기본설정변경](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/docs/tutorial_conf.md)
-- [Site-to-Site](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/docs/Site2Site.md)
+- [기본개념 및 컨셉](http://github.com/sokangmin/wini-nifi/blob/master/docs/concept.md)
+- [기본사용법](http://github.com/sokangmin/wini-nifi/blob/master/docs/tutorial_use.md)
+- [기본설정변경](http://github.com/sokangmin/wini-nifi/blob/master/docs/tutorial_conf.md)
+- [Site-to-Site](http://github.com/sokangmin/wini-nifi/blob/master/docs/Site2Site.md)
 - [NiFi-Scouter 연동](http://59.25.178.122:9000/sokangmin/wini-scouter/blob/master/nifi2Scouter.md)
 ## Templates and Examples
 *
@@ -79,7 +79,7 @@ Apache NiFi는 아파치 소프트웨어 재단의 오픈소스( https://nifi.ap
 * [zarate02/Nifi](https://github.com/zarate02/Nifi) - 프로시저 호출하는 SQL서비스(callProcedureSQL), 소켓통신 서비스(CallSocket)
 * [sokangmin/nifi-wini-processors](http://59.25.178.122:9000/sokangmin/nifi-wini-processors) - 추적로그용 Processor
 
-## [Apache MiNiFi](http://59.25.178.122:9000/sokangmin/winitech-nifi/blob/master/docs/minifi.md)
+## [Apache MiNiFi](http://github.com/sokangmin/wini-nifi/blob/master/docs/minifi.md)
 
 <!--## Table of Contents
 
