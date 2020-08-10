@@ -1,4 +1,4 @@
-# NiFi 기본설치방법(Standalone)
+# NiFi 기본설치방법(Standalone모드)
 이 글은 Apache NiFi의 기본설치방법에 대해 설명한다. <br/>
 - OS : CentOS 7
 - Apache Nifi : 1.11.4
