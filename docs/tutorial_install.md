@@ -60,7 +60,7 @@ $ cp {toolkit 설치 디렉토리}/target/{host명}/* {NiFi 설치 디렉토리}
         <class>org.apache.nifi.authorization.FileAccessPolicyProvider</class>
         <property name="User Group Provider">file-user-group-provider</property>
         <property name="Authorizations File">./conf/authorizations.xml</property>
-        <property name="Initial Admin Identity">CN=admin, OU=winitech</property> // 관리자용 클라이언트  정보
+        <property name="Initial Admin Identity">CN=admin, OU=winiot</property> // 관리자용 클라이언트  정보
         <property name="Legacy Authorized Users File"></property>
         <property name="Node Identity 1">CN={호스트명}, OU=NIFI</property> // 서버 인증서 정보
         <property name="Node Group"></property>
