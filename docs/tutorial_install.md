@@ -6,8 +6,13 @@
 ### 1. nifi계정을 생성한다.
 - root 계정으로 접속 <br/>
 - nifi 계정 생성 <br/>
-#> groupadd nifi <br/>
-#> useradd -g nifi nifi <br/>
-#> passwd nifi <br/>
+```bash
+$ groupadd nifi 
+$ useradd -g nifi nifi
+$ passwd nifi
+```
 - nifi 계정으로 재접속
 
+### 2. JDK를 다운로드하고 환경변수를 등록한다.
+- jdk 다운로드 url : https://www.oracle.com/java/technologies/javase-jdk11-downloads.html <br/>
+#> tar
