@@ -74,5 +74,6 @@ $ echo 2 > {NiFi 설치디렉토리}/state/zookeeper/myid
 ### 7. NiFi 재구동(모든서버 적용)
 
 ### ※ 참고
+- https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html
 - https://bryanbende.com/development/2018/10/23/apache-nifi-secure-cluster-setup
 - https://bryanbende.com/development/2016/08/17/apache-nifi-1-0-0-authorization-and-multi-tenancy
