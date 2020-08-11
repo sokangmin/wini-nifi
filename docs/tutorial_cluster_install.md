@@ -65,6 +65,14 @@ $ mkdir -p {NiFi 설치디렉토리}/state/zookeeper
 ```
 - myid 파일 생성(1번서버)
 ```bash
-$ echo 1 > {NiFi 설치디렉토리}
+$ echo 1 > {NiFi 설치디렉토리}/state/zookeeper/myid
 ```
+- myid 파일 생성(2번서버)
+```bash
+$ echo 2 > {NiFi 설치디렉토리}/state/zookeeper/myid
+```
+### 7. NiFi 재구동(모든서버 적용)
 
+### ※ 참고
+- https://bryanbende.com/development/2018/10/23/apache-nifi-secure-cluster-setup
+- https://bryanbende.com/development/2016/08/17/apache-nifi-1-0-0-authorization-and-multi-tenancy
