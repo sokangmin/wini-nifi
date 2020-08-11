@@ -43,7 +43,7 @@ $ cp {toolkit 설치 디렉토리}/target/{host명}/* {NiFi 설치 디렉토리}
 ```
 ### 6. {NiFi 설치 디렉토리}/conf/authorizers.xml을 아래와 같이 수정한다.
 - userGroupProvider 수정
-```properties
+```xml
     <userGroupProvider>
         <identifier>file-user-group-provider</identifier>
         <class>org.apache.nifi.authorization.FileUserGroupProvider</class>
@@ -54,7 +54,7 @@ $ cp {toolkit 설치 디렉토리}/target/{host명}/* {NiFi 설치 디렉토리}
     </userGroupProvider>
 ```
 - accessPolicyProvider 수정
-```properties
+```xml
     <accessPolicyProvider>
         <identifier>file-access-policy-provider</identifier>
         <class>org.apache.nifi.authorization.FileAccessPolicyProvider</class>
