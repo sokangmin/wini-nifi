@@ -53,9 +53,18 @@ nifi.zookeeper.connect.string=호스트명:2181
         <property name="Access Control">Open</property>
     </cluster-provider>
 ```
-### 4. zookeeper.property 수정
+### 4. zookeeper.property 수정(모든서버 적용)
 ```properties
 server.1={1번서버 호스트명}:2888:3888;2181
 server.2={2번서버 호스트명}:2888:3888;2181
 ```
-### 5. zookeeper myid file 생성
+### 5. zookeeper myid file 생성(모든서버 적용)
+- state/zookeeper 디렉토리 생성
+```bash
+$ mkdir -p {NiFi 설치디렉토리}/state/zookeeper
+```
+- myid 파일 생성(1번서버)
+```bash
+$ echo 1 > {NiFi 설치디렉토리}
+```
+
