@@ -18,6 +18,6 @@ NiFi는 데이터흐름을 쉽게 관리하도록 설계된 프로세싱 엔진�
 
 정리하면, FlowFile은 NiFi가 인식하는 데이터 단위이고 Processor는 FlowFile을 수집, 변형, 저장하는 기능을 한다. 그리고 Connection은 Processor와 Processor을 연결하여 FlowFile을 전달한다.<br/>
 데이터 흐름은 이런 컴포넌트들을 조합하여 구성한다.
-<br/><img src="./image/image28.png"></img><br/>
+<br/><img src="../image/image28.png"></img><br/>
 
 ## 아키텍쳐
