@@ -1,5 +1,5 @@
 # NiFi Cluster 설치방법
-이 글은 Apache NiFi의 Cluster 설치방법에 대해 설명한다. <br/>
+이 글은 Apache NiFi의 Cluster를 구성하는 방법에 대해 설명한다. <br/>
 - 선행작업으로 [NiFi 기본설치(Standalone모드)](./tutorial_install.md)가 2대이상으로 미리 설치되어야 한다.<br/>
 일단 2대라고 가정하고 설명한다.
 
