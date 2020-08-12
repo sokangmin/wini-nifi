@@ -54,7 +54,7 @@ A-B, B-C 둘 다 최종적으로는 B로 데이터가 모인다. 다만, A-B는 
 ## Site-to-Site Client NiFi 인스턴스 설정
 1. Component Toolbar의 Remote Process Group 아이콘(<img src="../image/image31.png"></img>)을 선택하여, 캔버스의 원하는 위치에 드랍한다.
 2. URLs와 Transprot Protocol을 입력한다.
-   - URLs은 Server NiFi 인스턴스의 url을 입력한다.(ex>http://remotehost/nifi, https://remotehost:8443/nifi)
+   - URLs은 Server NiFi 인스턴스의 url을 입력한다.(ex>http:\//remotehost/nifi, https:\//remotehost:8443/nifi)
    - Transport Protocol을 선택한다.<br/>
 
 <img src="../image/image32.png"></img><br/>
