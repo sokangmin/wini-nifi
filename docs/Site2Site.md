@@ -25,25 +25,25 @@ A-B, B-C 둘 다 최종적으로는 B로 데이터가 모인다. 다만, A-B는 
 
 ## Site-to-Site Server NiFi 인스턴스 설정
 - Push 경우
-  1. Component Toolbar의 Input Port 아이콘(<img src="./image/image29.png"></img>)을 선택하여, Root Process Group 캔버스의 원하는 위치에 드랍한다.
+  1. Component Toolbar의 Input Port 아이콘(<img src="../image/image29.png"></img>)을 선택하여, Root Process Group 캔버스의 원하는 위치에 드랍한다.
   2. Input Port Name을 입력하고 ADD버튼을 클릭한다.
 - Pull 경우
-  1. Component Toolbar의 Output Port 아이콘(<img src="./image/image30.png"></img>)을 선택하여, Root Process Group 캔버스의 원하는 위치에 드랍한다.
+  1. Component Toolbar의 Output Port 아이콘(<img src="../image/image30.png"></img>)을 선택하여, Root Process Group 캔버스의 원하는 위치에 드랍한다.
   2. Output Port Name을 입력하고 ADD버튼을 클릭한다.
 
 ## Site-to-Site Client NiFi 인스턴스 설정
-1. Component Toolbar의 Remote Process Group 아이콘(<img src="./image/image31.png"></img>)을 선택하여, 캔버스의 원하는 위치에 드랍한다.
+1. Component Toolbar의 Remote Process Group 아이콘(<img src="../image/image31.png"></img>)을 선택하여, 캔버스의 원하는 위치에 드랍한다.
 2. URLs와 Transprot Protocol을 입력한다.
    - URLs은 Server NiFi 인스턴스의 url을 입력한다.(ex>http://remotehost/nifi, https://remotehost:8443/nifi)
    - Transport Protocol을 선택한다.<br/>
 
-<img src="./image/image32.png"></img><br/>
+<img src="../image/image32.png"></img><br/>
 3. Remote Process Group에서 오른쪽 마우스를 클릭하고 Manage remote ports를 선택한다. 원격인스턴스의 Port정보가 맞는지 확인한다.
 
-<img src="./image/image33.png"></img><br/>
+<img src="../image/image33.png"></img><br/>
 4. Relationship 연결을 통해 Processor와 Remote Process Group을 연결하고 연결할 포트를 선택한다.
 
-<img src="./image/image34.png"></img><br/>
+<img src="../image/image34.png"></img><br/>
 
 ## 주의사항
 - Transport Protocol 설정<br/>
