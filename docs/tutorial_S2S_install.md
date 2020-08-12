@@ -23,4 +23,10 @@ Site-to-Site을 사용하면 NiFi 인스턴스간의 데이터를 안전하고 �
 - 송신NiFi 계정 추가
   - 수신NiFi에 관리자계정으로 접속
   - 메뉴-Users 선택
-  - Identity에 송신 NiFi의 서버DN(예를 들어, CN=winiot.w07, OU=NIFI)을 입력하고 OK버튼을 
+  - Identity에 송신 NiFi의 서버DN(예를 들어, CN=winiot.w07, OU=NIFI)을 입력하고 OK버튼을 선택한다.
+  <img src="../image/image_tutorial_S2S_install_001.png" width="50%" height="50%"></img>
+- global 정책 추가
+  - 수신NiFi의 메뉴-Policies 선택
+  - 좌측 콤보박스에서 retrieve site-to-site details 선택
+  - retrieve site-to-site details 정책에 송신 NiFi의 서버DN(예를 들어, CN=winiot.w07, OU=NIFI)을 추가
+  <img src="../image/image_tutorial_S2S_install_002.png" width="50%" height="50%"></img>
