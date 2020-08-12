@@ -1,4 +1,4 @@
-# 기본 설정 변경
+# 기본 설정 및 로그인 방
 이 글은 Apache NiFi의 기본 설정 변경에 대해 설명한다. 
 Apache NiFi의 기본 개념 및 컨셉을 이해하고 있다는 가정에서 진행한다.
 
@@ -37,10 +37,10 @@ NiFi에서는 인증서방식을 통해 https에 접속하는 사용자를 인�
 - 인증서 설치
     - certs/standalone.p12 파일을 더블클릭한다. 아래와 같은 화면이 나타나면 계속 다음을 클릭한다.
     - 암호는 인증서 생성시 입력한 값(ex>password123)을 입력한다.<br/>
-<img src="./image/image6.png"></img><img src="./image/image7.png"></img>
+<img src="../image/image6.png"></img><img src="../image/image7.png"></img>
 
 ### https 접속
 https://localhost:8443/nifi 으로 접속하면 아래와 같은 화면이 나타난다.<br/>
-<img src="./image/image8.png"></img><br/>
+<img src="../image/image8.png"></img><br/>
 인증서를 선택하면 NiFi 화면으로 이동한다.<br/>
-<img src="./image/image9.png"></img>
+<img src="../image/image9.png"></img>
