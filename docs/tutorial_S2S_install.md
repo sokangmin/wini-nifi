@@ -30,8 +30,8 @@ Site-to-Site을 사용하면 NiFi 인스턴스간의 데이터를 안전하고 �
   - retrieve site-to-site details 정책에 송신 NiFi의 서버DN(예를 들어, CN=winiot.w07, OU=NIFI)을 추가
   <img src="../image/image_tutorial_S2S_install_002.png" width="50%" height="50%"></img>
 - Input/Output Port 정책 추가
-  - Input/Output Port에서 마우스 오른쪽 버튼 클릭
-  <img src="../image/image_tutorial_S2S_install_003.png" width="50%" height="50%"></img>
+  - Input/Output Port에서 마우스 오른쪽 버튼 클릭<br/>
+  <img src="../image/image_tutorial_S2S_install_003.png" width="50%" height="50%"></img><br/>
   - Manage access policies 선택
   - retrieve data via site-to-site/send data via site-to-site에 송신 NiFi의 서버DN(예를 들어, CN=winiot.w07, OU=NIFI)을 추가
   <img src="../image/image_tutorial_S2S_install_004.png" width="50%" height="50%"></img>
