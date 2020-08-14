@@ -7,7 +7,7 @@ Apache NiFi는 아파치 소프트웨어 재단의 오픈소스( https://nifi.ap
 
 ## Features
 ### NiFi in back-end platform
-<img width='60%' height='60%' src="./image/image5.png"></img><br/>
+<img width='55%' height='55%' src="./image/image5.png"></img><br/>
 
 ### 장점
 - 웹 기반의 직관적인 인터페이스를 제공
