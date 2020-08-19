@@ -111,4 +111,4 @@ $ {NiFi-registry 설치 디렉토리}/bin/nifi-registry.sh stop
 ### ※ 참고
 - https://www.youtube.com/watch?v=qD03ao3R-a4
 - https://www.youtube.com/watch?v=DSO12fhnZ90
-- https://192.168.0.37:18443/nifi-registry-docs/documentation
+<!--- https://192.168.0.37:18443/nifi-registry-docs/documentation-->
