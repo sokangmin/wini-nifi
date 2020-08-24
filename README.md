@@ -1,4 +1,4 @@
-# Apache NiFi  ffff
+# Apache NiFi
 Apache NiFi는 아파치 소프트웨어 재단의 오픈소스( https://nifi.apache.org/ ) 이며,<br/>
 이기종 데이터 소스 및 시스템간의 데이터이동을 효율적으로 처리, 관리, 모니터링하는 백엔드 수집플랫폼(Dataflow 엔진) 입니다.<br/>
 아래와 같은 특징을 통해 쉽고 안전하게 개발을 할 수 있습니다. <br/>
