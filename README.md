@@ -11,3 +11,6 @@ NiFi의 기본 설계 개념은 [Flow Based Programming](https://en.wikipedia.or
 | Connection | Bounded Buffer | Processor간의 연결을 의미하며, NiFi의 Connection은 queue역할을 하며 라우팅, 우선순위, 역압등 기능을 통해 다양한 프로세스가  상호 작용할 수 있도록 도와준다. |
 | Flow Controller | Scheduler | Processor가 어느 간격 또는 시점에 실행하는지 스케줄링한다. |
 | Process Group | subset | 특정업무, 기능단위로 여러 Processor를 묶을 수 있으며, Input과 Output포트를 제공해 Process Group간의 데이터 이동이 가능하다. |
+
+## NiFi Architecture
+<image src='./image/zero-leader-node.png'/>
