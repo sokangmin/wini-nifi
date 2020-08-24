@@ -23,5 +23,5 @@ NiFi는 호스트 운영체제의 JVM 내에서 실행된다. JVM에서 NiFi의 
 - Content Repository : FlowFile의 Body(contents)를 저장하는 공간이다. 기본적으로 디스크에 저장되며 둘 이상의 디스크에 저장되도록 변경 가능하다.
 - Provenance Repository : 모든 데이터들의 이력이 저장되는 공간이다. 기본적으로 디스크에 저장되며 모든 데이터들은 색인화되고 검색 가능하다.(Apache Lucene 사용)
 
-NiFi는 클러스터 내에서도 작동 할 수 있다.
+NiFi는 클러스터 내에서도 작동 할 수 있다.</>
 <image src='./image/zero-leader-cluster.png' width='50%' height='50%'/>
