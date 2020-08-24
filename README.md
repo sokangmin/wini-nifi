@@ -16,11 +16,7 @@ NiFi의 기본 설계 개념은 [Flow Based Programming](https://en.wikipedia.or
 <image src='./image/zero-leader-node.png' width='80%' height='80%'/>
 NiFi는 호스트 운영체제의 JVM 내에서 실행된다. JVM에서 NiFi의 주요 구성 요소는 다음과 같다:
 
-- Web Server
-  NiFi는 Web UI를 통해 시스템간의 정보흐름을 개발, 제어 ,모니터링한다.
-- Flow Controller
-  Processor가 실행될 쓰레드를 제공하고 스케줄링을 담당한다.
-- Extensions
-  Custom Processor를 개발하여 확장할 수 있다.
-- FlowFile Repository
-  현재 구동중인 FlowFile에 대한 상태를 저장하는 공간이다. 기본적으로 디스크에 [Write-Ahead Log](https://en.wikipedia.org/wiki/Write-ahead_logging) 방식으로 쓰여진다.
+- Web Server : NiFi는 Web UI를 통해 시스템간의 정보흐름을 개발, 제어 ,모니터링한다.
+- Flow Controller : Processor가 실행될 쓰레드를 제공하고 스케줄링을 담당한다.
+- Extensions : Custom Processor를 개발하여 확장할 수 있다.
+- FlowFile Repository : 현재 구동중인 FlowFile에 대한 상태를 저장하는 공간이다. 기본적으로 디스크에 [Write-Ahead Log](https://en.wikipedia.org/wiki/Write-ahead_logging) 방식으로 쓰여진다.
