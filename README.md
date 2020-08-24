@@ -13,4 +13,4 @@ NiFi의 기본 설계 개념은 [Flow Based Programming](https://en.wikipedia.or
 | Process Group | subset | 특정업무, 기능단위로 여러 Processor를 묶을 수 있으며, Input과 Output포트를 제공해 Process Group간의 데이터 이동이 가능하다. |
 
 ## NiFi Architecture
-<image src='./image/zero-leader-node.png'/>
+<image src='./image/zero-leader-node.png' width='80%' height='80%'/>
