@@ -55,4 +55,9 @@ NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공�
   - Flow Templates<br/>
     데이터의 흐름은 패턴화 될 수 있으며 이러한 모범 사례를 공유 할 수 있으면 많은 도움이 된다. Flow Template를 사용하면 데이터 흐름 디자인을 재사용 및 다른 개발자와 공유할 수 있다.
   - Data Provenance<br/>
+    NiFi는 데이터가 시스템을 통해 변경되는 이력(출처)데이터를 저장, 색인화, 검색을 지원한다. 이 정보는 디버깅, 최적화, 그 밖의 상황을 판단하는데 중요한 정보가 된다.
+  - Recovery / Recording a rolling buffer of fine-grained history<br/>
+    Content repository는 데이터의 롤링 버퍼 역할을 하도록 설계되었다. 데이터는 content repository에서 만료되거나 저장공간이 부족할 때만 제거된다. 이는 Data Provenance와 결합되어 content 보기, 다운로드, replay을 가능하게 한다.
+- Security(보안)
+  - System to System
     
