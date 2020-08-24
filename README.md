@@ -42,4 +42,8 @@ NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공�
 
 - Flow Management(흐름관리)
   - Guaranteed Delivery<br/>
-    dddd
+    NiFi의 핵심철학은 높은 수준의 Guaranteed Delevery 이다. 이는 persistent write-ahead log 및 content repository를 사용함으로써 달성된다. 모든 flowfile에 대한 정보를 저장하여 데이터 유실을 방지한다.
+  - Data Buffering w/ Back Pressure and Pressure Release<br/>
+    NiFi는 Queue에 대기하고 있는 모든 데이터의 버퍼링은 물론 지정한 제한에 도달할 때의 Back Pressure 및 지정된 시간(만료시간)에 도달하면 데이터를 에이징(소멸)하는 기능을 제공한다.
+  - Prioritized Queuing<
+    
