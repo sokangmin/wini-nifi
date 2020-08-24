@@ -30,5 +30,5 @@ NiFi는 클러스터 내에서도 작동 할 수 있다.<br/>
 ## Performance Expectations and Characteristics of NiFi
 NiFi는 호스트 시스템의 자원을 최대한 활용하도록 설계되어있다. 이러한 성능 최적화는 CPU 및 디스크와 밀접하게 관련되어 있다. 
 
-- For IO
-dddd
+- For IO<br/>
+ddd
