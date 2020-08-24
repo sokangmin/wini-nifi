@@ -36,3 +36,6 @@ IO에 대한 예상 처리량 또는 지연시간은 데이터 저장 플러그�
 Flow Controller는 특정 Processor가 실행될 쓰레드 및 스케줄링을 담당한다. Processor는 작업 실행이 완료되는 즉시 쓰레드를 반환하도록 되어있다. Flow Controller는 쓰레드 풀을 관리하며 사용 가능한 쓰레드 수를 관리 할 수 있다. 사용하기에 이상적인 쓰레드 수는 코어 수, 다른 서비스 실행 여부 등 호스트 시스템 리소스에 따라 다르다. 일반적으로 IO를 많이 쓰는 경우, 수십 개의 쓰레드 사용이 합리적이다.
 - For RAM<br/>
 NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공하는 메모리 공간을 제한된다. JVM의 garbage collection은 총 실제 힙 크기를 제한하고 시간이 지남에 따라 애플레케이션이 얼마나 잘 실행되는지 최적화하는데  매우 중요한 요소이다.
+
+## High Level Overview of Key NiFi Features
+
