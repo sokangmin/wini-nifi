@@ -19,9 +19,9 @@ NiFi는 호스트 운영체제의 JVM 내에서 실행된다. JVM에서 NiFi의 
 - Web Server : NiFi는 Web UI를 통해 시스템간의 정보흐름을 개발, 제어 ,모니터링한다.
 - Flow Controller : Processor가 실행될 쓰레드를 제공하고 스케줄링을 담당한다.
 - Extensions : Custom Processor를 개발하여 확장할 수 있다.
-- FlowFile Repository : 현재 구동중인 FlowFile에 대한 상태를 저장하는 공간이다. 기본적으로 디스크에 [Write-Ahead Log](https://en.wikipedia.org/wiki/Write-ahead_logging) 방식으로 쓰여진다.
-- Content Repository : FlowFile의 Body(contents)를 저장하는 공간이다. 기본적으로 디스크에 저장되며 둘 이상의 디스크에 저장되도록 변경 가능하다.
-- Provenance Repository : 모든 데이터들의 이력이 저장되는 공간이다. 기본적으로 디스크에 저장되며 모든 데이터들은 색인화되고 검색 가능하다.(Apache Lucene 사용)
+- FlowFile Repository : 현재 구동중인 FlowFile에 대한 상태를 저장하는 공간이다. 기본적으로 디스크에 [Write-Ahead Log](https://en.wikipedia.org/wiki/Write-ahead_logging) 방식으로 쓰여진다.(플러그인 가능)
+- Content Repository : FlowFile의 Body(contents)를 저장하는 공간이다. 기본적으로 디스크에 저장되며 둘 이상의 디스크에 저장되도록 변경 가능하다.(플러그인 가능)
+- Provenance Repository : 모든 데이터들의 이력이 저장되는 공간이다. 기본적으로 디스크에 저장되며(플러그인 가능) 모든 데이터들은 색인화되고 검색 가능하다.(Apache Lucene 사용)
 
 NiFi는 클러스터 내에서도 작동 할 수 있다.<br/>
 <image src='./image/zero-leader-cluster.png' width='50%' height='50%'/><br/>
@@ -31,4 +31,8 @@ NiFi는 클러스터 내에서도 작동 할 수 있다.<br/>
 NiFi는 호스트 시스템의 자원을 최대한 활용하도록 설계되어있다. 이러한 성능 최적화는 CPU 및 디스크와 밀접하게 관련되어 있다. 
 
 - For IO<br/>
-ddd
+IO에 대한 예상 처리량 또는 지연시간은 데이터 저장 플러그인 방식에 따른 구성에 따라 다르다. 일반적으로 보통 디스크또는 RAID 볼륨에서 초당 약 50MB의 읽기/쓰기 속도를 가정한다. 더 나은 성능이 필요할 경우, 둘 이상의 디스크를 사용하도록 변경 하거나 다른 플러그인을 사용한다.
+- For CPU<br/>
+Flow Controller는 특정 Processor가 실행될 쓰레드 및 스케줄링을 담당한다. Processr는 작업 실행이 완료되는 즉시 쓰레드를 반환하도록 되어있다. Flow Controller는 쓰레드 풀을 관리하며 사용 가능한 쓰레드 수를 관리 할 수 있다. 사용하기에 이상적인 쓰레드 수는 코어 수, 다른 서비스 실행 여부 등 호스트 시스템 리소스에 따라 다르다. 일반적으로 IO를 많이 쓰는 경우, 수십 개의 쓰레드 사용이 합리적이다.
+- For RAM<br/>
+
