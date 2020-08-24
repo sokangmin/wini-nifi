@@ -38,7 +38,7 @@ Flow Controller는 특정 Processor가 실행될 쓰레드 및 스케줄링을 �
 NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공하는 메모리 공간을 제한된다. JVM의 garbage collection은 총 실제 힙 크기를 제한하고 시간이 지남에 따라 애플레케이션이 얼마나 잘 실행되는지 최적화하는데  매우 중요한 요소이다.
 
 ## High Level Overview of Key NiFi Features
-NiFi의 주요특징에 대한 개략적인 설명이다. 주요 특징 범주에는 흐름관리, 사용 용이성, 보안, 확장 가능한 아키텍쳐, 유연한 확장 모델이 포함된다.
+주요특징에 대한 개략적인 설명이다. 주요 특징 범주에는 흐름관리, 사용 용이성, 보안, 확장 가능한 아키텍쳐, 유연한 확장 모델이 포함된다.
 
 - Flow Management(흐름관리)
   - Guaranteed Delivery<br/>
