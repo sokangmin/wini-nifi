@@ -41,3 +41,5 @@ NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공�
 NiFi의 주요특징에 대한 개략적인 설명이다. 주요 특징 범주에는 흐름관리, 사용 용이성, 보안, 확장 가능한 아키텍쳐, 유연한 확장 모델이 포함된다.
 
 - Flow Management(흐름관리)
+  - Guaranteed Delivery<br/>
+    dddd
