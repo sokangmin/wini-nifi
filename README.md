@@ -50,7 +50,9 @@ NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공�
   - Flow Specific QoS (latency v throughput, loss tolerance, etc.)<br/>
     데이터의 특성에 따라 중요도(가치)가 다르다.(처리시간, 주기 등) NiFi는 이러한 데이터 특성에 따른 flow별 구성이 가능하다.
 - Ease Of Use(사용 용이성)
-  - Visual Command and Control
+  - Visual Command and Control<br/>
+    데이터 흐름은 매우 복잡해질 수 있다. 이러한 흐름을 시각화하면 복잡성을 줄이고 단순화해야하는 영역을 식별하는 데 도움이 될 수 있다. NiFi는 데이터 흐름의 시각화뿐만아니라 실시간으로 데이터흐름을 변경하면 변경 사항이 즉시 적용된다. 변경사항은 일반적으로 Processor단위로 구성요소로 세분화되고 격리됩니다. 특정 수정을 하기 위해 전체 흐름을 중지 할 필요가 없습니다.
+  - 
     
   
     
