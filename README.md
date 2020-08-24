@@ -66,3 +66,9 @@ NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공�
   - Multi-tenant Authorization<br/>
     NiFi는 권한수준을 각 구성요소에 적용되어 관리자가 액세스를 제어할 수 있도록 한다. 각 개인, 팀, 조직별로 접근 가능한 데이터 흐름을 격리하여 Multi-tenant가 가능하도록 제공한다.
 - Extensible Architecture(확장 가능한 아키텍쳐)
+  - Extension<br/>
+    NiFi는 확장가능하게 설계되어 있다. 확장 범위는 Processor, controller service, report task, prioritizer, 사용자UI 등이 있다.
+  - Classloader Isolation<br/>
+    NiFi는 사용자정의 클래스 로더 모델을 제공하여 각 확장 번들이 매우 제한된 종속성 세트에 노출되도록 한다. 결과적으로 확장 번들은 다른 번들과 추돌 할 수 있는지 여부에 관심없이 빌드 할 수 있고 종속성 문제는 방지한다. 
+  - Site-to-Site Communication Protocol<br/>
+    NiFi 인스턴스간에 선호되는 통신 프로토콜은 NiFi Site-to-Site(S2S) 프로토콜이다. S2S를 사용하면 한 NiFi인스턴스에서 다른 NiFi인스턴스로 쉽고 효율적이며 안전하게 데이터를 전송할 수 있다. NiFi 클라이언트 라이브러리는 S2S를 통해 NiFi와 통신하기 위해 다른 App 또는 장치에 쉽게 빌드되고 번들로 제공 될 수 있다. 소켓 기반 프로토콜과 HTTP(S)프로토콜은 모두 기본 전송 프로토콜로 S2S에서 지원되고 S2S통신에 프록시 서버를 내장할 수 있다.
