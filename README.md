@@ -20,3 +20,5 @@ NiFi는 호스트 운영체제의 JVM 내에서 실행된다. JVM에서 NiFi의 
 - Flow Controller : Processor가 실행될 쓰레드를 제공하고 스케줄링을 담당한다.
 - Extensions : Custom Processor를 개발하여 확장할 수 있다.
 - FlowFile Repository : 현재 구동중인 FlowFile에 대한 상태를 저장하는 공간이다. 기본적으로 디스크에 [Write-Ahead Log](https://en.wikipedia.org/wiki/Write-ahead_logging) 방식으로 쓰여진다.
+- Content Repository : FlowFile의 Body(contents)를 저장하는 공간이다. 기본적으로 디스크에 저장되며 둘 이상의 디스크에 저장되도록 변경 가능하다.
+- Provenance Repository : 모든 데이터들의 이력이 저장되는 공간이다. 기본적으로 디스크에 저장되며 모든 데이터들은 색인화되고 검색 가능하다.
