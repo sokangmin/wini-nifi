@@ -15,6 +15,7 @@ NiFi의 기본 설계 개념은 [Flow Based Programming](https://en.wikipedia.or
 ## NiFi Architecture
 <image src='./image/zero-leader-node.png' width='80%' height='80%'/>
 NiFi는 호스트 운영체제의 JVM 내에서 실행된다. JVM에서 NiFi의 주요 구성 요소는 다음과 같다:
+
 - Web Server
   NiFi는 Web UI를 통해 시스템간의 정보흐름을 개발, 제어 ,모니터링한다.
 - Flow Controller
