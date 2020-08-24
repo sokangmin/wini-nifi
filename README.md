@@ -26,3 +26,9 @@ NiFi는 호스트 운영체제의 JVM 내에서 실행된다. JVM에서 NiFi의 
 NiFi는 클러스터 내에서도 작동 할 수 있다.<br/>
 <image src='./image/zero-leader-cluster.png' width='50%' height='50%'/><br/>
 1.0 release부터 Zero-Leader Clustering기법이 사용된다. NiFi 클러스터의 각 노드는 서로 다른 데이터 집합의 데이터에 대한 동일한 작업을 수행한다. [Apache ZooKeeper](https://zookeeper.apache.org)는 클러스터 코디네이터, Primary 노드로 하나의 서버를 선택하고 장애 조치는 Zookeeper가 자동으로 처리한다. 모든 클러스터 노드는 코드네이터로 heart beat와 상태정보를 전달한다. 코드네이터는 수신받은 정보를 토대로 노드 연결 해제 및 연결을 담당한다. Primary 노드는 어떤작업에 대해서 클러스터가 아닌 단일노드로 동작해야 할때 사용한다.
+
+## Performance Expectations and Characteristics of NiFi
+NiFi는 호스트 시스템의 자원을 최대한 활용하도록 설계되어있다. 이러한 성능 최적화는 CPU 및 디스크와 밀접하게 관련되어 있다. 
+
+- For IO
+dddd
