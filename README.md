@@ -1,6 +1,6 @@
 # Apache NiFi Overview
 ## What is Apache NiFi?
-Apache NiFi는 아파치 소프트웨어 재단의 오픈소스( https://nifi.apache.org/ ) 로써, 점점 복잡해지는 엔터프라이즈 환경(데이터유실, 시스템 장애대처, 실시간 처리 이슈의 부상 등)에서 이기종 데이터 소스 및 시스템간의 정보 흐름을 효율적으로 처리, 관리, 모니터링 하기 위해 만들어졌다.
+Apache NiFi는 아파치 소프트웨어 재단의 오픈소스( https://nifi.apache.org/ ) 로써, 엔터프라이즈 환경(점점 복잡해지는 시스템, 데이터유실, 시스템 장애대처, 실시간 처리 이슈 등)에서 이기종 데이터 소스 및 시스템간의 정보 흐름을 효율적으로 처리, 관리, 모니터링 하기 위해 만들어졌다.
 
 ## The core concepts of NiFi
 NiFi의 기본 설계 개념은 [Flow Based Programming](https://en.wikipedia.org/wiki/Flow-based_programming#Concepts) 의 주요 아이디어와 밀접한 관련이 있다. 다음은 주요 NiFi 개념과 FBP와 어떻게 연결되는지 보여준다.
