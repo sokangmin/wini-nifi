@@ -44,7 +44,7 @@ NiFi는 Process 등록 및 연결을 통해 모든 연계흐름을 작성한다.
 - 사용할 Processor를 목록에서 선택하고, ADD버튼을 눌러 등록한다.(여기서는 예제로  GenerateFlowFile Processor을 선택)
 <image src='./image/image14.png' width='40%' height='40%'/><br/>
 - 동일한 방식으로 Log를 출력할 때 쓰는 Log Attribute Processor를 등록한다.
-<image src='./image/image15.png' width='40%' height='40%'/><br/>
+<image src='./image/image15.png' width='40%' height='40%'/><br/> 
 
 
 ## 출처
