@@ -76,7 +76,7 @@ NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공�
   - Scale-out (Clustering)<br/>
     NiFi는 여러 노드를 함께 클러스터링하는 사용을 통해 확장하도록 설계되어있다. 싱글노드가 프로비저닝되고 초당 수백 MB를 처리하도록 구성되어 있으면 보통의 클러스터가 초당GB를 처리하도록 구성 될수 있다. 
   - Scale-up & down
-    NiFi는 유연한 방식으로 Scale-up 및 축소하도록 설계되어있다. 스케줄링 탭에서 프로세서의 동시작업수를 조정하여 처리량을 조절할 수 있다. 이를 통해 더 많은 프로세스가 동시에 실행되어  더 많은 처리량을 제공된다. 다른 측면에서는 제한된 하드웨어 리소스로 인해 [MiNiFi](https://nifi.apache.org/minifi/index.html)를 이용하여 NiFi를 축소하여 사용할 수도 있다.
+    NiFi는 유연한 방식으로 Scale-up 및 축소하도록 설계되어있다. 스케줄링 탭에서 프로세서의 동시작업수를 조정하여 처리량을 조절할 수 있다. 이를 통해 더 많은 프로세스가 동시에 실행되어  더 많은 처리량을 제공된다. 다른 측면에서는 제한된 하드웨어 리소스로 인해 [MiNiFi](./docs/minifi.md)를 이용하여 NiFi를 축소하여 사용할 수도 있다.
     
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
