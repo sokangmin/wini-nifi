@@ -36,10 +36,12 @@ UI에는 데이터흐름을 만들고 관리하는 여러 도구가 있다:<br/>
 - Help : 도움말을 제공한다.
 - About : NiFi버전 정보를 제공한다
 
+NiFi는 Process 등록 및 연결을 통해 모든 연계흐름을 작성한다. 간단한 연계 흐름 작성을 예제로 Process 등록 및 연결을 설명한다.
 ### Adding a Processor
-캔버스에 Processor를 추가하여 데이터흐름 생성을 시작한다. 화면왼쪽상단의 Processor 아이콘(<image src='./image/iconProcessor.png' width='2%' height='2%'/>)을 캔버스로 드래그하면 추가 할 Processor를 선택할 수 있는 대화 상자가 표시된다: <br/>
+캔버스에 Processor를 추가하여 연계흐름 생성을 시작한다. 데이터의 시작과 종료를 모두 Processor로 수행하므로 가장 많이 사용하는 기본 기능이다.
+- 화면왼쪽상단의 Processor 아이콘(<image src='./image/iconProcessor.png' width='2%' height='2%'/>)을 캔버스로 드래그하면 추가 할 Processor를 선택할 수 있는 대화 상자가 표시된다: <br/>
 <image src='./image/add-processor.png' width='50%' height='50%'/><br/>
-여기서는 예시로 로컬디스크에서 NiFi로 파일을 가져오려고한다고 가정한다. 대화상자의 오른쪽 상단 모서리의 필터상자에 "local"로 검색한다. 그러면 "l
+- 사용할 Processor를 목록에서 선택하고, ADD버튼을 눌러 등록한다.
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
