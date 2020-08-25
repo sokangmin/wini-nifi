@@ -63,6 +63,7 @@ NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 
   - Prioritizers : FlowFile을 처리하기 위한 우선순위 정책을 설정한다. 여러개의 우선순위 정책이 활성화 된 경우 먼저 나열된 우선 순위가 먼저 평가된다.
 - 아래와 같이 Relationship을 구성한다.<br/>
 <image src='./image/image19.png'/><br/>
+GenerateFlowFile Processor의 경고아이콘(<image src='./image/iconAlert.png' width='2%' height='2%'/>)이 중지아이콘(<image src='./image/iconStop.png' width='2%' height='2%'/>)으로 변경된 것을 볼 수 있다.
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
