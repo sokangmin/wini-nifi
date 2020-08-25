@@ -40,7 +40,7 @@ NiFi는 Process 등록 및 연결을 통해 모든 연계흐름을 작성한다.
 ### Adding a Processor
 캔버스에 Processor를 추가하여 연계흐름 생성을 시작한다. 데이터의 시작과 종료를 모두 Processor로 수행하므로 가장 많이 사용하는 기본 기능이다.
 - 화면왼쪽상단의 Processor 아이콘(<image src='./image/iconProcessor.png' width='2%' height='2%'/>)을 캔버스로 드래그하면 추가 할 Processor를 선택할 수 있는 대화 상자가 표시된다: <br/>
-<image src='./image/add-processor.png' width='50%' height='50%'/><br/>
+<image src='./image/add-processor.png' width='40%' height='40%'/><br/>
 - 사용할 Processor를 목록에서 선택하고, ADD버튼을 눌러 등록한다.(여기서는 예제로  GenerateFlowFile Processor을 선택)
 <image src='./image/image14.png'/><br/>
 - 동일한 방식으로 Log를 출력할 때 쓰는 Log Attribute Processor를 등록한다.<br/>
@@ -54,7 +54,7 @@ NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 
 - GenerateFlowFile에 마우스를 오버하면 RelationShip을 설정하는 화살표가 나타난다. 이 화살표를 드래그하여 아래의 LogAttribute에 연결한다.<br/>
 <image src='./image/image18.png'/><br/>
 - 이 연결에 포함할 RelationShip을 선택할 수 있는 대화상자가 나타난다. 예제에서는 sucess를 선택한다.<br/>
-<image src='./image/image18.png'/><br/>
+<image src='./image/connection-details.png'/><br/>
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
