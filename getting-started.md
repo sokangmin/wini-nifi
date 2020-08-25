@@ -72,10 +72,11 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 <image src='./image/image20.png'/><br/>
 - SCHEDULING 탭의 Run Schedule를 0 sec에서 5 sec로 수정한다.<br/>
 <image src='./image/image21.png'/><br/>
-- PROPERTIES 탭의 Custom Text에 Hello World!를 입력하고 OK버튼을 클릭한다.
+- PROPERTIES 탭의 Custom Text에 Hello World!를 입력하고 OK버튼을 클릭한다.<br/>
 <image src='./image/image22.png'/><br/>
 - 동일한 방식으로 LogAttribute의 세부 설정을 수정한다.
   - SETTING탭의 Automatically Terminate Relationships의 success항목을 체크한다.
   - PROPERTIES 탭의 Log PayLoad를 true로 수정한다.
+  
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
