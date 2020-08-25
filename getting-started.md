@@ -81,6 +81,11 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 ※ 아래와 같이 Processor에 느낌표가 표시되면 세부설정이 유효하지  아직 구동할 준비가 되지 않았다는 표시입니다. 위의 설정을 다시 체크해보시기 바랍니다.<br/>
 <image src='./image/image16.png'/><br/>
 
+### Starting and Stopping Processors
+- 구동할 Processor를 선택하고 [Operate Palette](#operate-palette)의  시작 버튼을 클릭한다.<br/>
+<img src='./image/image23.png'/>
+- 정지할 Processor를 선택하고 [Operate Palette](#oprate-palette)의 정지 버튼을 클릭한다.<br/>
+<img src='./image/image24.png'/>
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
