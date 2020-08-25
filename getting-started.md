@@ -78,7 +78,7 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
   - SETTING탭의 Automatically Terminate Relationships의 success항목을 체크한다.
   - PROPERTIES 탭의 Log PayLoad를 true로 수정한다.
 <br/>
-※ 아래와 같이 Processor에 느낌표가 표시되면 세부설정이 invalid해서 아직 구동할 준비가 되지 않았다는 표시입니다. 위의 설정을 다시 체크해보시기 바랍니다.<br/>
+※ 아래와 같이 Processor에 느낌표가 표시되면 세부설정이 유효하지  아직 구동할 준비가 되지 않았다는 표시입니다. 위의 설정을 다시 체크해보시기 바랍니다.<br/>
 <image src='./image/image16.png'/><br/>
 
 
