@@ -58,6 +58,9 @@ NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 
 - 설정 탭을 클릭하면 이 연결의 작동 방식을 구성하기 위한 옵션을 보여준다.<br/>
 <image src='./image/connection-settings.png' width='43%' height='43%'/><br/>
 - name : Connection의 이름을 지정 할 수 있다. 그렇지 않으면 이름은 선택한 RelationShip을 기반으로 한다.
-- FlowFile Expiration : e
+- FlowFile Expiration : 데이터의 만료시간을 설정할 수 있다. 기본적으로 O sec로 설정된다.(무한대) 특정 만료시간에 도달하게 되면 대기중인 FlowFile이 삭제된다.
+- Back Pressure Object Threshold, Size Threshold : Back Pressure 임계치를 FlowFile 개수 또는 사이즈로 조절할 수 있다. 데이터를 가져오는 Processor는 임계치에 도달하게되면 시스템이 복구 할수 있도록 새 데이터 가져오기를 중지한다.
+- Prioritizers : FlowFile을 처리하기 위한 우선순위 정책을 설정한다. 여러개의 우선순위 정책이 활성화 된 경우 먼저 나열된 우선 순위가 먼저 평가된다.
+
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
