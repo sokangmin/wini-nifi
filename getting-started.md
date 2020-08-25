@@ -20,7 +20,7 @@ UI에는 데이터흐름을 만들고 관리하는 여러 도구가 있다:<br/>
 <image src='./image/global-menu.png' /><br/>
 
 ### Adding a Processor
-캔버스에 Processor를 추가하여 데이터흐름 생성을 시작한다. 화면왼쪽상단의 Processor 아이콘(<image src='./image/iconProcessor.png' width='3%' height='3%'/>)을 캔버스로 드래그한다:
+캔버스에 Processor를 추가하여 데이터흐름 생성을 시작한다. 화면왼쪽상단의 Processor 아이콘(<image src='./image/iconProcessor.png' width='2%' height='2%'/>)을 캔버스로 드래그한다:
     
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
