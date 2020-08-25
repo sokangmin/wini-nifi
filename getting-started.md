@@ -42,9 +42,9 @@ NiFi는 Process 등록 및 연결을 통해 모든 연계흐름을 작성한다.
 - 화면왼쪽상단의 Processor 아이콘(<image src='./image/iconProcessor.png' width='2%' height='2%'/>)을 캔버스로 드래그하면 추가 할 Processor를 선택할 수 있는 대화 상자가 표시된다: <br/>
 <image src='./image/add-processor.png' width='50%' height='50%'/><br/>
 - 사용할 Processor를 목록에서 선택하고, ADD버튼을 눌러 등록한다.(여기서는 예제로  GenerateFlowFile Processor을 선택)
-<image src='./image/image14.png' width='50%' height='50%'/><br/>
+<image src='./image/image14.png' width='40%' height='40%'/><br/>
 - 동일한 방식으로 Log를 출력할 때 쓰는 Log Attribute Processor를 등록한다.
-<image src='./image/image15.png' width='50%' height='50%'/><br/>
+<image src='./image/image15.png' width='40%' height='40%'/><br/>
 
 
 ## 출처
