@@ -92,8 +92,7 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - 조회버튼을 클릭하고 선택한 항목의 View Details를 클릭한다.<br/>
 <img src="./image/image25.png"></img>
 - Content 탭의 VIEW를 클릭하고 본문내용이 Hello World!인지 확인한다.<br/>
-<img src="./image/image26.png"></img><br/>
-<img src="./image/image27.png"></img>
+<img src="./image/image26.png"></img><img src="./image/image27.png"></img>
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
