@@ -102,7 +102,24 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - EncryptContent: FlowFile 본문 암호화 또는 복호화
 - ReplaceText(*): 정규표현식을 사용하여 Text 본문 수정
 - TransformXml: XML본문에 XSLT 변환적용
-- JoltTransformJSON(*):
+- JoltTransformJSON(*): JSON본문에 JOLT 변환적용
+### Routing and Mediation
+- ControlRate: 데이터가 후속 프로세서로 전송되는 속도 제어
+- DetectDuplicate: 사용자 정의 기준에 따라 중복 FlowFile 확인
+- DistributeLoad: 사용자가 정의한 Relationship으로 데이터를 로드밸런싱 또는 일부샘플데이터만 전송
+- MonitorActivity: 사용자가 정의한 기간동안 데이터 흐름이 없으면 알림 발생. 데이터 흐름이 다시 재개 될때 선택적으로 알림 발생
+- RouteOnAttribute(*): 속성의 내용에 따라 FlowFile을 라우팅
+- ScanAttribute: FlowFile의 속성이 사용자가 정의한 사전에 있는 용어와 일치하는지 확인
+- RouteOnContent(*): 정규표현식을 사용하여 본문의 내용에 따라 FlowFile을 라우팅
+- ScanContent: FlowFile의 본문이 사용자가 정의한 사전에 있는 용어와 일치하는지 확인
+- ValidateXml: XML 스키마에 대한 XML 본문 유효성 검사
+### Database Access
+- ConvertJSONToSQL(*): JSON 문서를 INSERT 또는 UPDATE SQL로 변환
+- ExecuteSQL(*): 사용자 정의한 SELECT SQL을 실행하고 결과를 Avro 형식으로 반환
+- PutSQL(*): FlowFile의 내용에 정의된 SQL문을 실행하여 Database 업데이트
+- SelectHiveQL: Apache Hive 데이터베이스에 대해 사용자 정의 SELECT HiveQL을 실행하여 결과를 Avro 또는 CSV 형식으로 반환
+- PutHiveQL: FlowFile의 내용에 정의된 HiveQL문을 실행하여 Database 업데이트
+### Attribute Extraction
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
