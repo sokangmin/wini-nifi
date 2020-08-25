@@ -11,7 +11,7 @@ NiFi를 사용하는데 필요한 핵심용어를 개략적으로 설명한다.
 - [NiFi Site-to-Site 구성방법](./docs/tutorial_S2S_install.md)
 
 ## Started NiFi. Now What?
-NiFi가 시작되었으므로 데이터 흐름을 만들고 모니터링하기 위해 사용자 인터페이스를 불러올 수 있다. 웹 브라우저를 열고 http://localhost:8080/nifi 로 이동한다. 포트는 NiFi conf 디렉토리에서 nifi.properties 파일을 편집하여 변경가능하고 기본포트는 8080이다. <br/>
+NiFi가 시작되었으므로 데이터 흐름을 만들고 모니터링하기 위해 사용자 인터페이스를 불러올 수 있다. 시작하려면 웹 브라우저를 열고 http://localhost:8080/nifi 로 이동한다. 포트는 NiFi conf 디렉토리에서 nifi.properties 파일을 편집하여 변경가능하고 기본포트는 8080이다. <br/>
 ※ [NiFi 포트 변경 및 https접속방법](./docs/tutorial_conf.md)
 
 - For IO<br/>
