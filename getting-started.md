@@ -57,6 +57,7 @@ NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 
 <image src='./image/connection-details.png' width='43%' height='43%'/><br/>
 - 설정 탭을 클릭하면 이 연결의 작동 방식을 구성하기 위한 옵션을 보여준다.<br/>
 <image src='./image/connection-settings.png' width='43%' height='43%'/><br/>
-
+- name : Connection의 이름을 지정 할 수 있다. 그렇지 않으면 이름은 선택한 RelationShip을 기반으로 한다.
+- FlowFile Expiration : e
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
