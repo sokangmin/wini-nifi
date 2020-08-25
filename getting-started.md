@@ -127,8 +127,17 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - HashAttribute: 사용자가 정의한 속성목록에 대해 해싱함수를 수행
 - HashContent: FlowFile 본문에 대해 해싱함수를 수행하고 해시 값을 속성에 추가
 - IdentifyMimeType: FlowFile에 사용되는 MIME 유형을 식별
-- UpdateAttribute(*): FlowFile에 사용자가 정의한 속성을 추가 및 업데이트.
-
+- UpdateAttribute(*): FlowFile에 사용자가 정의한 속성을 추가 및 업데이트
+### System Interaction
+- ExecuteProcess(*): 사용자가 정의한 OS명령을 실행. OS 명령의 표준출력으로 기록된 내용이 FlowFile의 본문으로 리다이렉션됨.
+- ExecuteStreamCommand(*): 사용자가 정의한 OS명령을 실행. FlowFile의 본문은 선택적으로 OS명령의 표준입력으로 전달됨. OS명령의 표준출력으로 기록된 내용이 FlowFile의 본문으로 리다이렉션됨.
+### Data Ingestion
+- GetFile(*): 로컬디스크의 파일내용을 NiFi로 전달
+- GetFTP(*): FTP를 통해 원격파일의 내용을 NiFi로 전달
+- GetSFTP(*): SFTP를 통해 원격파일의 내용을 NiFi로 전달
+- GetJMSQueue: JMS 큐에서 메시지를 다운로드하고 JMS 메시지 내용을 NiFi로 전달
+- GetJMSTopic: JMS 토픽에서 메시지를 다운로드하고 JMS 메시지 내용을 NiFi로 전달
+- GetHTTP: HTTP 또는 HTTPS 기반 URL을 통해 다운로드한 메시지를 NiFi로 전달  
 
 
 ## 출처
