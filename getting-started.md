@@ -53,7 +53,7 @@ NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 
 
 - GenerateFlowFile에 마우스를 오버하면 RelationShip을 설정하는 화살표가 나타난다. 이 화살표를 드래그하여 아래의 LogAttribute에 연결한다.<br/>
 <image src='./image/image18.png'/><br/>
-- 이 연결에 포함할 RelationShip을 선택할 수 있는 대화상자가 나타난다. 예제에서는 sucess를 선택한다.<br/>
+- 이 연결에 포함할 RelationShip을 선택할 수 있는 대화상자가 나타난다. 예제에서는 success를 선택한다.<br/>
 <image src='./image/connection-details.png' width='43%' height='43%'/><br/>
 - 설정 탭을 클릭하면 이 연결의 작동 방식을 구성하기 위한 옵션을 보여준다.<br/>
 <image src='./image/connection-settings.png' width='43%' height='43%'/><br/>
@@ -63,7 +63,19 @@ NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 
   - Prioritizers : FlowFile을 처리하기 위한 우선순위 정책을 설정한다. 여러개의 우선순위 정책이 활성화 된 경우 먼저 나열된 우선 순위가 먼저 평가된다.
 - 아래와 같이 Relationship을 구성한다.<br/>
 <image src='./image/image19.png'/><br/>
-GenerateFlowFile Processor의 경고아이콘(<image src='./image/iconAlert.png' width='2%' height='2%'/>)이 중지아이콘(<image src='./image/iconStop.png' width='2%' height='2%'/>)으로 변경된 것을 볼 수 있다.
+GenerateFlowFile Processor의 경고아이콘(<image src='./image/iconAlert.png' width='2%' height='2%'/>)이 중지아이콘(<image src='./image/iconStop.png' width='2%' height='2%'/>)으로 변경된 것을 볼 수 있다. 그러나 LogAttribute Processor는 success 관계가 아무것도 연결되지 않아 경고아이콘(<image src='./image/iconAlert.png' width='2%' height='2%'/>)으로 남아 있는걸 볼 수 있다. 이는 LogAttribute Processor의 success 관계를 "Auto Terminated"로 보내 연계 흐름이 완료된 것으로 간주되게 변경해야 한다.
 
+### Configure Processor
+Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서는 GenerateFlowFile, LogAttribute의 몇몇 설정정보를 변경하고 저장한다.
+
+- GenerateFlowFile Processor에서 오른쪽 마우스버튼을 클릭하고 Configure를 선택한다.<br/>
+<image src='./image/image20.png'/><br/>
+- SCHEDULING 탭의 Run Schedule를 0 sec에서 5 sec로 수정한다.<br/>
+<image src='./image/image21.png'/><br/>
+- PROPERTIES 탭의 Custom Text에 Hello World!를 입력하고 OK버튼을 클릭한다.
+<image src='./image/image22.png'/><br/>
+- 동일한 방식으로 LogAttribute의 세부 설정을 수정한다.
+  - SETTING탭의 Automatically Terminate Relationships의 success항목을 체크한다.
+  - PROPERTIES 탭의 Log PayLoad를 true로 수정한다.
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
