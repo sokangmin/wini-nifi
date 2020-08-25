@@ -11,14 +11,11 @@ NiFi를 사용하는데 필요한 핵심용어를 개략적으로 설명한다.
 - [NiFi Site-to-Site 구성방법](./docs/tutorial_S2S_install.md)
 
 ## Started NiFi. Now What?
-NiFi가 시작되었으므로 데이터 흐름을 만들고 모니터링하기 위해 사용자 인터페이스를 불러올 수 있다. 시작하려면 웹 브라우저를 열고 http://localhost:8080/nifi 로 이동한다. 포트는 설정파일로 변경 기본포트는 8080이다. ([NiFi 포트 변경 및 https접속방법](./docs/tutorial_conf.md))
+NiFi가 시작되었으므로 데이터 흐름을 만들고 모니터링하기 위해 사용자 인터페이스를 불러올 수 있다. 시작하려면 웹 브라우저를 열고 http://localhost:8080/nifi 로 이동한다. 포트는 설정파일로 변경 기본포트는 8080이다. ([NiFi 포트 변경 및 https접속방법](./docs/tutorial_conf.md))<br/>
+그러면 데이터 흐름을 조정하기 위한 빈 캔버스인 사용자 인터페이스가 나타난다:<br/>
+<image src='./image/new-flow.png' width='70%' height='70%'/>
 
-- For IO<br/>
-IO에 대한 예상 처리량 또는 지연시간은 데이터 저장 플러그인 방식에 따른 구성에 따라 다르다. 일반적으로 보통 디스크또는 RAID 볼륨에서 초당 약 50MB의 읽기/쓰기 속도를 가정한다. 더 나은 성능이 필요할 경우, 둘 이상의 디스크를 사용하도록 변경 하거나 다른 플러그인을 사용한다.
-- For CPU<br/>
-Flow Controller는 특정 Processor가 실행될 쓰레드 및 스케줄링을 담당한다. Processor는 작업 실행이 완료되는 즉시 쓰레드를 반환하도록 되어있다. Flow Controller는 쓰레드 풀을 관리하며 사용 가능한 쓰레드 수를 관리 할 수 있다. 사용하기에 이상적인 쓰레드 수는 코어 수, 다른 서비스 실행 여부 등 호스트 시스템 리소스에 따라 다르다. 일반적으로 IO를 많이 쓰는 경우, 수십 개의 쓰레드 사용이 합리적이다.
-- For RAM<br/>
-NiFi는 JVM내에 존재하므로 사용가능한 메모리는 JVM에서 제공하는 메모리 공간을 제한된다. JVM의 garbage collection은 총 실제 힙 크기를 제한하고 시간이 지남에 따라 애플레케이션이 얼마나 잘 실행되는지 최적화하는데  매우 중요한 요소이다.
+
 
 ## High Level Overview of Key NiFi Features
 주요특징에 대한 개략적인 설명이다. 주요 특징 범주에는 흐름관리, 사용 용이성, 보안, 확장 가능한 아키텍쳐, 유연한 확장 모델이 포함된다.
