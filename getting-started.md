@@ -78,7 +78,7 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
   - SETTING탭의 Automatically Terminate Relationships의 success항목을 체크한다.
   - PROPERTIES 탭의 Log PayLoad를 true로 수정한다.
 <br/>
-※ 아래와 같이 Processor에 느낌표가 표시되면 세부설정이 유효하지  아직 구동할 준비가 되지 않았다는 표시입니다. 위의 설정을 다시 체크해보시기 바랍니다.<br/>
+※ 아래와 같이 Processor에 느낌표가 표시되면 세부설정이 유효하지  아직 구동할 준비가 되지 않았다는 표시이다. 위의 설정을 다시 체크해보시기 바란다.<br/>
 <image src='./image/image16.png'/><br/>
 
 ### Starting and Stopping Processors
@@ -92,7 +92,17 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - 조회버튼을 클릭하고 선택한 항목의 View Details를 클릭한다.<br/>
 <img src="./image/image25.png"></img>
 - Content 탭의 VIEW를 클릭하고 본문내용이 Hello World!인지 확인한다.<br/>
-<img src="./image/image26.png"></img><img src="./image/image27.png"></img>
+<img src="./image/image26.png"></img><img src="./image/image27.png"></img><br/>
+
+## What Processors are Available
+효과적인 데이터 흐름을 생성하려면 사용자가 사용할 수 있는 Processor유형을 이해해야 한다. NiFi는 다양한 시스템에서 데이터를 수집하고 데이터를 라우팅, 변환, 처리, 분할 및 집계하고 여러 시스템에 데이터를 전송하는 다양한 Processor를 포함하고 있다. 가장 자주 사용되는 Processor를 기능별로 분류한다.
+### Data Transformation
+- CompressContent: FlowFile 본문 압축 또는 압축해제
+- ConvertCharacterSet: FlowFile 본문의 Character Set 변환
+- EncryptContent: FlowFile 본문 암호화 또는 복호화
+- ReplaceText(*): 정규표현식을 사용하여 Text 본문 수정
+- TransformXml: XML본문에 XSLT 변환적용
+- JoltTransformJSON(*):
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
