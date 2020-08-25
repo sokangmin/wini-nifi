@@ -45,7 +45,8 @@ NiFi는 Process 등록 및 연결을 통해 모든 연계흐름을 작성한다.
 <image src='./image/image14.png' width='50%' height='50%'/><br/>
 - 동일한 방식으로 Log를 출력할 때 쓰는 Log Attribute Processor를 등록한다.
 <image src='./image/image15.png' width='50%' height='50%'/><br/> 
-
+- 아래와 같이 Processor를 구성한다.
+<image src='./image/image17.png' width='50%' height='50%'/><br/> 
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
