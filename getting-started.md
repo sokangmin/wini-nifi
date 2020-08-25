@@ -84,7 +84,7 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 ### Starting and Stopping Processors
 - 구동할 Processor를 선택하고 [Operate Palette](#operate-palette)의  시작 버튼을 클릭한다.<br/>
 <img src='./image/image23.png'/>
-- 정지할 Processor를 선택하고 [Operate Palette](#oprate-palette)의 정지 버튼을 클릭한다.<br/>
+- 정지할 Processor를 선택하고 [Operate Palette](#operate-palette)의 정지 버튼을 클릭한다.<br/>
 <img src='./image/image24.png'/>
 
 ## 출처
