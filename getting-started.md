@@ -55,6 +55,8 @@ NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 
 <image src='./image/image18.png'/><br/>
 - 이 연결에 포함할 RelationShip을 선택할 수 있는 대화상자가 나타난다. 예제에서는 sucess를 선택한다.<br/>
 <image src='./image/connection-details.png' width='43%' height='43%'/><br/>
+- 설정 탭을 클릭하면 이 연결의 작동 방식을 구성하기 위한 옵션을 보여준다.<br/>
+<image src='./image/connection-settings.png' width='43%' height='43%'/><br/>
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
