@@ -17,7 +17,7 @@ NiFi가 시작되었으므로 데이터 흐름을 만들고 모니터링하기 �
 UI에는 데이터흐름을 만들고 관리하는 여러 도구가 있다:<br/>
 <image src='./image/nifi-toolbar-components.png' width='70%' height='70%'/><br/>
 글로벌 메뉴에는 다음과 같은 옵션이 있다:<br/>
-<image src='./image/global-menu.png' width='70%' height='70%'/><br/>
+<image src='./image/global-menu.png' /><br/>
 
 
 ## High Level Overview of Key NiFi Features
