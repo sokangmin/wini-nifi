@@ -11,7 +11,7 @@ NiFi를 사용하는데 필요한 핵심용어를 개략적으로 설명한다.
 - [NiFi Site-to-Site 구성방법](./docs/tutorial_S2S_install.md)
 
 ## Started NiFi. Now What?
-NiFi가 시작되었으므로 데이터 흐름을 만들고 모니터링하기 위해 사용자 인터페이스를 불러올 수 있다. 시작하려면 웹 브라우저를 열고 http://localhost:8080/nifi 로 이동한다. 포트는 NiFi conf 디렉토리에서 nifi.properties 파일을 편집하여 변경가능하고 기본포트는 8080이다. ※ [NiFi 포트 변경 및 https접속방법](./docs/tutorial_conf.md)
+NiFi가 시작되었으므로 데이터 흐름을 만들고 모니터링하기 위해 사용자 인터페이스를 불러올 수 있다. 시작하려면 웹 브라우저를 열고 http://localhost:8080/nifi 로 이동한다. 포트는 설정파일로 변경 기본포트는 8080이다. ※ [NiFi 포트 변경 및 https접속방법](./docs/tutorial_conf.md)
 
 - For IO<br/>
 IO에 대한 예상 처리량 또는 지연시간은 데이터 저장 플러그인 방식에 따른 구성에 따라 다르다. 일반적으로 보통 디스크또는 RAID 볼륨에서 초당 약 50MB의 읽기/쓰기 속도를 가정한다. 더 나은 성능이 필요할 경우, 둘 이상의 디스크를 사용하도록 변경 하거나 다른 플러그인을 사용한다.
