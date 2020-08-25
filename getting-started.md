@@ -13,8 +13,11 @@ NiFi를 사용하는데 필요한 핵심용어를 개략적으로 설명한다.
 ## Started NiFi. Now What?
 NiFi가 시작되었으므로 데이터 흐름을 만들고 모니터링하기 위해 사용자 인터페이스를 불러올 수 있다. 시작하려면 웹 브라우저를 열고 http://localhost:8080/nifi 로 이동한다. 포트는 설정파일로 변경 기본포트는 8080이다. ([NiFi 포트 변경 및 https접속방법](./docs/tutorial_conf.md))<br/>
 그러면 데이터 흐름을 조정하기 위한 빈 캔버스인 사용자 인터페이스가 나타난다:<br/>
-<image src='./image/new-flow.png' width='70%' height='70%'/>
-
+<image src='./image/new-flow.png' width='70%' height='70%'/><br/>
+UI에는 데이터흐름을 만들고 관리하는 여러 도구가 있다:<br/>
+<image src='./image/nifi-toolbar-components.png' width='70%' height='70%'/><br/>
+글로벌 메뉴에는 다음과 같은 옵션이 있다:<br/>
+<image src='./image/global-menu.png' width='70%' height='70%'/><br/>
 
 
 ## High Level Overview of Key NiFi Features
