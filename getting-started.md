@@ -48,5 +48,8 @@ NiFi는 Process 등록 및 연결을 통해 모든 연계흐름을 작성한다.
 - 아래와 같이 Processor를 구성한다.<br/>
 <image src='./image/image17.png'/><br/> 
 
+### Connecting Processor
+NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 Processor로 보낼지 라우팅을 할 수 있다. Processor가 FlowFile 처리를 마치면 연결된 RelationShip으로 FlowFile을 전송한다.
+
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
