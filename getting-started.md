@@ -120,6 +120,16 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - SelectHiveQL: Apache Hive 데이터베이스에 대해 사용자 정의 SELECT HiveQL을 실행하여 결과를 Avro 또는 CSV 형식으로 반환
 - PutHiveQL: FlowFile의 내용에 정의된 HiveQL문을 실행하여 Database 업데이트
 ### Attribute Extraction
+- EvaluateJsonPath(*): JSON문서를 사용자가 정의한 JSONPath 표현식을 이용하여 FlowFile 본문을 바꾸거나 속성으로 추출
+- EvaluateXPath: XML문서를 사용자가 정의한 XPath 표현식을 이용하여 FlowFile 본문을 바꾸거나 속성으로 추출
+- EvaluateXQuery: XML문서를 사용자가 정의한 XQuery 쿼리를 이용하여 FlowFile 본문을 바꾸거나 속성으로 추출
+- ExtractText(*): Text문서를 사용자가 정의한 정규표현식을 이용하여 속성으로 추출
+- HashAttribute: 사용자가 정의한 속성목록에 대해 해싱함수를 수행
+- HashContent: FlowFile 본문에 대해 해싱함수를 수행하고 해시 값을 속성에 추가
+- IdentifyMimeType: FlowFile에 사용되는 MIME 유형을 식별
+- UpdateAttribute(*): FlowFile에 사용자가 정의한 속성을 추가 및 업데이트.
+
+
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
