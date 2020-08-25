@@ -25,6 +25,17 @@ UI에는 데이터흐름을 만들고 관리하는 여러 도구가 있다:<br/>
 글로벌 메뉴에는 다음과 같은 옵션이 있다:<br/>
 <image src='./image/global-menu.png' width='20%' height='20%' /><br/>
 
+- Summary : NiFi에 등록된 컴포넌트들을 종합적으로 보고, 검색할 수 있다.
+- Counter : 특정 Processor에서 발생시키는 카운트 정보를 제공한다.
+- Bulletin Board : 시스템의 문제 등을 볼 수 있다.
+- Data Provenance : 데이터를 추적할 수 있다.
+- Controller Settings : FlowFile Controller의 설정(쓰레드 개수)과 DB Poll, Cache 서비스와 같은 컨트롤러 서비스를 관리한다.
+- Flow Configuration History : FlowFile의 등록, 삭제, 변경 등의 이력을 제공한다.
+- Users, Polices : 사용자 및 권한을 관리 한다. 인증시스템(Https, Kerberos, Ldap 등)이 활성화된 경우에만 메뉴가 보인다.
+- Templates : Processor와 그 들의 연결정보인 Connection 컴포넌트를 속성까지도 유지 한 체 템플릿화 할 수 있는데, 이렇게 등록된 템플릿을 조회하고, 내려받을 수 있는 기능을 제공한다.
+- Help : 도움말을 제공한다.
+- About : NiFi버전 정보를 제공한다
+
 ### Adding a Processor
 캔버스에 Processor를 추가하여 데이터흐름 생성을 시작한다. 화면왼쪽상단의 Processor 아이콘(<image src='./image/iconProcessor.png' width='2%' height='2%'/>)을 캔버스로 드래그하면 추가 할 Processor를 선택할 수 있는 대화 상자가 표시된다: <br/>
 <image src='./image/add-processor.png' width='50%' height='50%'/><br/>
