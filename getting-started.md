@@ -53,6 +53,8 @@ NiFi는 RelationShip을 통해 각 Processor에서 처리한 FlowFile을 어느 
 
 - GenerateFlowFile에 마우스를 오버하면 RelationShip을 설정하는 화살표가 나타난다. 이 화살표를 드래그하여 아래의 LogAttribute에 연결한다.<br/>
 <image src='./image/image18.png'/><br/>
+- 이 연결에 포함할 RelationShip을 선택할 수 있는 대화상자가 나타난다. 예제에서는 sucess를 선택한다.<br/>
+<image src='./image/image18.png'/><br/>
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
