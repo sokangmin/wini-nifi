@@ -137,8 +137,11 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - GetSFTP(*): SFTP를 통해 원격파일의 내용을 NiFi로 전달
 - GetJMSQueue: JMS 큐에서 메시지를 다운로드하고 JMS 메시지 내용을 NiFi로 전달
 - GetJMSTopic: JMS 토픽에서 메시지를 다운로드하고 JMS 메시지 내용을 NiFi로 전달
-- GetHTTP: HTTP 또는 HTTPS 기반 URL을 통해 다운로드한 메시지를 NiFi로 전달  
-
+- GetHTTP: HTTP 또는 HTTPS 기반 URL을 통해 다운로드한 메시지를 NiFi로 전달 
+- ListenHTTP: HTTP(HTTPS)서버를 시작하고 들어오는 요청을 수신. 들어오는 POST 요청의 경우, 요청내용이 FlowFile에 기록됨. 200응답이 반환
+- ListenUDP: 들어오는 UDP패킷을 수신하고 FlowFile을 생성
+- GetHDFS: HDFS에서 사용자가 지정한 디렉토리를 모니터링. 새파일이 HDFS에 들어갈 때마다 NiFi로 전달
+- ListHDFS/FetchHDFS: 
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/overview.html
