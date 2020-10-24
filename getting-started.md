@@ -144,4 +144,4 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - ListHDFS/FetchHDFS: ListHDFS는 HDFS의 사용자 지정 디렉터리를 모니터링하고 발견되는 각 파일의 파일 이름이 포함 된 FlowFile을 내 보냅니다. 이러한 FlowFile은 클러스터 전체에서 팬 아웃되어 FetchHDFS 프로세서로 전송 될 수 있으며, 이는 해당 파일의 실제 콘텐츠를 가져오고 HDFS에서 가져온 콘텐츠가 포함 된 FlowFile을 내보내는 역할을합니다. GetHDFS와의 차이점은 클러스터 구성일 경우, GetHDFS는 Primary node에서만 동작하고 ListHDFS/FetchHDFS는 클러스터 전체에서 콘텐츠를 가져오는 작업을 동작한다.
 
 ## 출처
-- https://nifi.apache.org/docs/nifi-docs/html/overview.html
+- https://nifi.apache.org/docs/nifi-docs/html/getting-started.html
