@@ -151,7 +151,10 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - PutFile(*): FlowFile의 내용을 로컬 (또는 네트워크 연결) 파일 시스템의 디렉터리에 파일로 저장
 - PutFTP(*): FlowFile의 내용을 원격 FTP 서버로 전송
 - PutSFTP(*): FlowFile의 내용을 원격 SFTP 서버로 전송
-- 
+- PutJMS: FlowFile의 내용을 JMS 메시지로 JMS 브로커로 전송
+- PutSQL(*): FlowFile의 내용을 SQL DDL 문 (INSERT, UPDATE 또는 DELETE)으로 실행
+- PutKafka: FlowFile의 내용을 Apache Kafka에 메시지로 전송
+- PutMongo : FlowFile의 내용을 MongoDB에 INSERT 또는 UPDATE
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/user-guide.html
