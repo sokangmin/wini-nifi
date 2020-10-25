@@ -155,6 +155,7 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - PutSQL(*): FlowFile의 내용을 SQL DDL 문 (INSERT, UPDATE 또는 DELETE)으로 실행
 - PutKafka: FlowFile의 내용을 Apache Kafka에 메시지로 전송
 - PutMongo : FlowFile의 내용을 MongoDB에 INSERT 또는 UPDATE
+### Splitting and Aggregation
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/user-guide.html
