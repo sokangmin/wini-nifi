@@ -143,7 +143,15 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - GetHDFS: HDFS에서 사용자가 지정한 디렉토리를 모니터링. 새파일이 HDFS에 들어갈 때마다 NiFi로 전달
 - ListHDFS/FetchHDFS: ListHDFS는 HDFS의 사용자 지정 디렉터리를 모니터링하고 발견되는 각 파일의 파일 이름이 포함 된 FlowFile을 내 보냅니다. 이러한 FlowFile은 클러스터 전체에서 팬 아웃되어 FetchHDFS 프로세서로 전송 될 수 있으며, 이는 해당 파일의 실제 콘텐츠를 가져오고 HDFS에서 가져온 콘텐츠가 포함 된 FlowFile을 내보내는 역할을합니다. GetHDFS와의 차이점은 클러스터 구성일 경우, GetHDFS는 Primary node에서만 동작하고 ListHDFS/FetchHDFS는 클러스터 전체에서 콘텐츠를 가져오는 작업을 동작한다.
 - FetchS3Object(*): Amazon Web Services (AWS) Simple Storage Service (S3)에서 객체의 콘텐츠를 NiFi로 전달. ncloud Object Storage도 S3인터페이스 사용함.
-- GetKafka(*):
+- GetKafka(*): Apache Kafka에서 메시지를 가져와서 NiFi로 전달. 메시지는 메시지 당 FlowFile로 내보내거나 사용자 지정 구분 기호를 사용하여 함께 일괄 처리도 가능.
+- GetMongo: MongoDB에 대해 사용자 지정 쿼리를 실행하고 결과를 NiFi로 전달.
+- GetTwitter: 사용자가 Twitter의 엔드 포인트를 수신하는 필터를 등록하여 수신 된 각 트윗에 대한 FlowFile을 생성.
+### Data Egress / Sending Data
+- PutEmail: 구성된 수신자에게 이메일을 송신. FlowFile의 콘텐츠는 선택적으로 첨부 파일로 전송
+- PutFile(*): FlowFile의 내용을 로컬 (또는 네트워크 연결) 파일 시스템의 디렉터리에 파일로 저장
+- PutFTP(*): FlowFile의 내용을 원격 FTP 서버로 전송
+- PutSFTP(*): FlowFile의 내용을 원격 SFTP 서버로 전송
+- 
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/user-guide.html
