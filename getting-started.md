@@ -156,6 +156,7 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - PutKafka: FlowFile의 내용을 Apache Kafka에 메시지로 전송
 - PutMongo : FlowFile의 내용을 MongoDB에 INSERT 또는 UPDATE
 ### Splitting and Aggregation
+- SplitText: SplitText는 내용이 텍스트인 단일 FlowFile을 가져와 구성된 행 수에 따라 하나 이상의 FlowFile로 분할
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/user-guide.html
