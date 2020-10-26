@@ -157,6 +157,7 @@ Configure를 통해 각 Processor의 세부설정을 수정한다. 예시에서�
 - PutMongo : FlowFile의 내용을 MongoDB에 INSERT 또는 UPDATE
 ### Splitting and Aggregation
 - SplitText: SplitText는 내용이 텍스트인 단일 FlowFile을 가져와 구성된 행 수에 따라 하나 이상의 FlowFile로 분할
+- SplitJson: 배열 또는 여러 하위 개체로 구성된 JSON 개체를 JSON 요소 당 FlowFile로 분할
 
 ## 출처
 - https://nifi.apache.org/docs/nifi-docs/html/user-guide.html
