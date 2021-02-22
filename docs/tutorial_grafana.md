@@ -21,4 +21,4 @@ $ ./grafana-server
 ### 5. 테스트
 - url : http://{설치서버ip}:3000 </br>
 웹페이지에 접속에 성공하면 아래와 같은 초기화면이 표시.
-<img src="../image/image34.png"></img><br/>
+<img width='600' src="../image/image42.png"></img><br/>
