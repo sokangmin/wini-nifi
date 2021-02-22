@@ -52,5 +52,11 @@ $ ./prometheus
 - 메트릭 url : http://localhost:9090/metrics
 - PromQL테스트 url : http://localhost:9090
 
+### 6. NiFi 와의 연동
+- NiFi의 Controller Settings > REPORTING TASKS 탭 선택
+- Create a new reporting task를 클릭하고 PrometheusReportinTask 선택
+<img width='600' src="../image/image43.png"></img><br/>
+
+
 ### ※ 참고 블로그
 - 참고: https://velog.io/@ckstn0777/prometheus%ED%94%84%EB%A1%9C%EB%A9%94%ED%85%8C%EC%9A%B0%EC%8A%A4%EB%9E%80
