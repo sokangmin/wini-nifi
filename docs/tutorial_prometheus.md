@@ -54,9 +54,12 @@ $ ./prometheus
 
 ### 6. NiFi 와의 연동
 - NiFi의 Controller Settings > REPORTING TASKS 탭 선택
-- Create a new reporting task를 클릭하고 PrometheusReportinTask 선택
+- Create a new reporting task를 클릭하고 PrometheusReportingTask 선택
 <img width='600' src="../image/image43.png"></img><br/>
-
+- PrometheusReportingTask의 Properties를 아래와 같이 수정
+<img width='600' src="../image/image44.png"></img><br/>
+- PrometheusReportingTask를 시작
+- 테스트 url : http://{NiFi ip}:9092/metrics
 
 ### ※ 참고 블로그
 - 참고: https://velog.io/@ckstn0777/prometheus%ED%94%84%EB%A1%9C%EB%A9%94%ED%85%8C%EC%9A%B0%EC%8A%A4%EB%9E%80
