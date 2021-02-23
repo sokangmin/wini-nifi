@@ -24,5 +24,7 @@ $ ./grafana-server
 <img width='600' src="../image/image42.png"></img><br/>
 
 ### 6. Prometheus와의 연동
-- Configuration > Data Sources에서 Prometheus 정보 등록.
+- Configuration > Data Sources 메뉴에서 Prometheus 정보 등록.
 <img width='600' src="../image/image45.png"></img><br/>
+- Dashboards > manage 매뉴에서 import를 클릭하여 Dashboard등록.
+  - [Apache NiFi for Prometheus Dashboard.json](../image/Apache NiFi for Prometheus Dashboard.json) 다운로드.
