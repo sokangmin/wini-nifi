@@ -29,6 +29,6 @@ $ ./grafana-server
 - Dashboards > manage 매뉴에서 import를 클릭하여 Dashboard등록.
   - [Apache NiFi for Prometheus Dashboard.json](https://github.com/sokangmin/wini-nifi/blob/master/image/Apache%20NiFi%20for%20Prometheus%20Dashboard.json) 다운로드.
     - ㅇㅇㅇㅇ
-  - Upload.json file을 클릭하여 등록
+  - Upload.json file을 클릭하여 등록<br/>
 <img width='600' src="../image/image46.png"></img><br/>
   
