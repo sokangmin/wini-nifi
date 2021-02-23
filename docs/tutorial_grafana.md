@@ -31,7 +31,7 @@ $ ./grafana-server
     - Apache NiFi for Prometheus Dashboard는 [node_exporter Dashboard](https://github.com/starsliao/Prometheus/tree/master/node_exporter) 를 참고하여 만듬.
   - Upload.json file을 클릭하여 등록<br/>
 <img width='600' src="../image/image46.png"></img><br/>
-- 등록한 Dashboard를 클릭하면 아래와 같은 Dashboard가 표시됨
+- 등록한 Dashboard를 클릭하면 아래와 같은 Dashboard가 표시됨<br/>
 <img src="../image/image47.png"></img><br/>
 
 ### 7. Dashboard 설명
@@ -40,5 +40,7 @@ $ ./grafana-server
   - Project는 ROOT 프로세스그룹 안에 만들어진 하위프로세스그룹에 대한 정보임.
   - module은 Project안의 하위프로세스에 다한 정보임.
   - 아래와 같이 Project와 module을 선택하면 NiFi 모듈 정보에 표시된다.
-  - <img width='600' src="../image/image48.png"></img><br/>
+    <img width='600' src="../image/image48.png"></img><br/>
+- NiFi 모듈정보는 NiFi 구동상태 및 메뉴에서 선택한 모듈에 대한 정보를 표시함.
+- NiFi 서버정보는 NiFi가 설치된 서버의 CPU, Memory, Network, disk 등의 정보를 표시함.
   
