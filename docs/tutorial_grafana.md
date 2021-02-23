@@ -22,3 +22,7 @@ $ ./grafana-server
 - url : http://{설치서버ip}:3000 </br>
 웹페이지에 접속에 성공하면 아래와 같은 초기화면이 표시.
 <img width='600' src="../image/image42.png"></img><br/>
+
+### 6. Prometheus와의 연동
+- Configuration > Data Sources에서 Prometheus 정보 등록.
+<img width='600' src="../image/image45.png"></img><br/>
