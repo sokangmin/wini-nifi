@@ -33,4 +33,12 @@ $ ./grafana-server
 <img width='600' src="../image/image46.png"></img><br/>
 - 등록한 Dashboard를 클릭하면 아래와 같은 Dashboard가 표시됨
 <img src="../image/image47.png"></img><br/>
+
+### 7. Dashboard 설명
+- Dashboard는 메뉴, NiFi 모듈 정보, NiFi 서버 정보로 3가지 파트로 나뉨.
+- 메뉴에는 Project와 module이라는 선택항목이 있음.
+  - Project는 ROOT 프로세스그룹 안에 만들어진 하위프로세스그룹에 대한 정보임.
+  - module은 Project안의 하위프로세스에 다한 정보임.
+  - 아래와 같이 Project와 module을 선택하면 NiFi 모듈 정보에 표시된다.
+  - <img width='600' src="../image/image48.png"></img><br/>
   
