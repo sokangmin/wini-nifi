@@ -1,7 +1,7 @@
 # NiFi 기본설치방법(Standalone모드)
 이 글은 Apache NiFi의 기본설치방법에 대해 설명한다. <br/>
-- OS : CentOS 7
-- Apache Nifi : 1.11.4
+- OS : CentOS 7.3 64bit
+- Apache Nifi : 1.13.2
 
 ※ 테스트용(http,익명사용자 모드)으로 사용시에는 4~6작업은 생략해도 됨.
 
@@ -17,17 +17,17 @@ $ passwd nifi
 ### 2. JDK를 다운로드하고 환경변수를 등록한다.
 - jdk 다운로드 url : https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
 ```bash
-$ tar -xzvf jdk-11.0.6_linux-x64_bin.tar.gz
+$ tar -xzvf jdk-11.0.11_linux-x64_bin.tar.gz
 $ vi .bash_profile
-export JAVA_HOME=/home/nifi/jdk-11.0.6
+export JAVA_HOME=/home/nifi/jdk-11.0.11
 PATH=$JAVA_HOME/bin:$PATH:$HOME/.local/bin:$HOME/bin
 ```
 ### 3. Apache NiFi 사이트(https://nifi.apache.org/download.html) 에 접속하여 nifi 및 toolkit Binary파일을 다운로드하고 압축을 해제한다.
 ```bash
-$ wget http://apache.mirror.cdnetworks.com/nifi/1.11.4/nifi-1.11.4-bin.tar.gz
-$ wget http://apache.mirror.cdnetworks.com/nifi/1.11.4/nifi-toolkit-1.11.4-bin.tar.gz
-$ tar -xzvf nifi-1.11.4-bin.tar.gz
-$ tar -xzvf nifi-toolkit-1.11.4-bin.tar.gz
+$ wget https://mirror.navercorp.com/apache/nifi/1.13.2/nifi-1.13.2-bin.tar.gz
+$ wget https://mirror.navercorp.com/apache/nifi/1.13.2/nifi-toolkit-1.13.2-bin.tar.gz
+$ tar -xzvf nifi-1.13.2-bin.tar.gz
+$ tar -xzvf nifi-toolkit-1.13.2-bin.tar.gz
 ```
 ### 4. toolkit을 사용하여 인증서를 생성한다.
 ```bash
