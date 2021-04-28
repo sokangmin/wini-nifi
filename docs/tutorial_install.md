@@ -21,6 +21,9 @@ $ tar -xzvf jdk-11.0.11_linux-x64_bin.tar.gz
 $ vi .bash_profile
 export JAVA_HOME=/home/nifi/jdk-11.0.11
 PATH=$JAVA_HOME/bin:$PATH:$HOME/.local/bin:$HOME/bin
+
+$ . .bash_profile
+$ java -version
 ```
 ### 3. Apache NiFi 사이트(https://nifi.apache.org/download.html) 에 접속하여 nifi 및 toolkit Binary파일을 다운로드하고 압축을 해제한다.
 ```bash
