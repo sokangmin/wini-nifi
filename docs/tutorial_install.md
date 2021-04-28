@@ -83,6 +83,8 @@ Ctrl-c를 입력
 $ {NiFi 설치 디렉토리}/bin/nifi.sh stop
 ```
 
+### 8. 기타
+
 ### ※ 참고
 - https://nifi.apache.org/docs/nifi-docs/html/toolkit-guide.html#tls_toolkit
 - https://bryanbende.com/development/2016/08/30/apache-nifi-1.0.0-secure-site-to-site
