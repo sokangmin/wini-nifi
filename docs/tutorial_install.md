@@ -84,6 +84,9 @@ $ {NiFi 설치 디렉토리}/bin/nifi.sh stop
 ```
 
 ### 8. 기타
+- invalid host header 장애
+<image src='./image/image_tutorial_install_001.png' width='50%' height='50%'/><br/>
+
 
 ### ※ 참고
 - https://nifi.apache.org/docs/nifi-docs/html/toolkit-guide.html#tls_toolkit
