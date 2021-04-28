@@ -85,7 +85,7 @@ $ {NiFi 설치 디렉토리}/bin/nifi.sh stop
 
 ### 8. 기타
 - invalid host header 장애<br/>
-<image src='../image/image_tutorial_install_001.png' width='50%' height='50%'/><br/>
+<image src='../image/image_tutorial_install_001.png' width='70%' height='70%'/><br/>
 
 
 ### ※ 참고
