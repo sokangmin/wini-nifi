@@ -96,7 +96,7 @@ shadowWarning: 7
 ```
 - 구성파일 적용
 ```bash
-$ ldapadd -x -W -D "cn=admin,dc=winitech,dc=com" -f newuser.ldif
+$ ldapadd -x -W -D "cn=admin,dc=winiot,dc=com" -f newuser.ldif
 ```
 - 암호 설정
 ```bash
