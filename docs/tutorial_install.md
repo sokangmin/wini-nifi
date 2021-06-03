@@ -101,3 +101,4 @@ $ {NiFi 설치 디렉토리}/bin/nifi.sh stop
 - https://nifi.apache.org/docs/nifi-docs/html/toolkit-guide.html#tls_toolkit
 - https://bryanbende.com/development/2016/08/30/apache-nifi-1.0.0-secure-site-to-site
 - https://bryanbende.com/development/2016/08/17/apache-nifi-1-0-0-authorization-and-multi-tenancy
+- 일반유저 sudo권한추가  https://info-lab.tistory.com/163
