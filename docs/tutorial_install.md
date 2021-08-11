@@ -5,7 +5,7 @@
 
 ※ ~~테스트용(http,익명사용자 모드)~~ 으로 사용시에는 4~6작업은 생략해도 됨.
    - NiFi 1.14.0버전부터는 default로 (https, single user login) 으로 변경됨.(9작업으로 이동)
-   - http(익명사용자모드)는 nifi.property 파일을 수정하면 가능함.
+   - http(익명사용자모드)는 conf/nifi.properties 파일을 수정하면 가능함.
 
 ### 1. nifi계정을 생성한다.
 - root 계정으로 접속 <br/>
@@ -98,6 +98,9 @@ $ {NiFi 설치 디렉토리}/bin/nifi.sh stop
     ```properties
     nifi.web.proxy.host = host:port
     ```
+
+### 9. Secure by Default(Single User Login)
+- 
 
 ### ※ 참고
 - https://nifi.apache.org/docs/nifi-docs/html/toolkit-guide.html#tls_toolkit
