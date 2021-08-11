@@ -100,7 +100,8 @@ $ {NiFi 설치 디렉토리}/bin/nifi.sh stop
     ```
 
 ### 9. Secure by Default(Single User Login)
-- 
+- Apache NiFi 1.14.0의 주요개선사항 중 하나는 기본구성에 대한 보안 활성화이다. 즉, 이제 기본 구성으로 NiFi를 실행하기만하면
+  로컬 인스턴스가 https로 접속하여 사용자 이름과 비밀번호를 통해 로그인할 수 있는 환경으로 실행된다. [NIFI-8220](https://issues.apache.org/jira/browse/NIFI-8220)
 
 ### ※ 참고
 - https://nifi.apache.org/docs/nifi-docs/html/toolkit-guide.html#tls_toolkit
