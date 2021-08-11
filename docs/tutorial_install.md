@@ -88,7 +88,7 @@ $ {NiFi 설치 디렉토리}/bin/nifi.sh stop
 
 ### 8. 기타
 - invalid host header 장애<br/>
-<image src='../image/image_tutorial_install_001.png' width='70%' height='70%'/><br/>
+<image src='../image/image_tutorial_install_001.png?raw=true' width='70%' height='70%'/><br/>
     - 원인: NiFi가 https로 실행되는 경우 바인딩 된 host[:port]와 일치하는 Host헤더가 있는 HTTP요청만 허용한다.<br/>
     다른 host[:port]로 향하는 요청(프록시, 컨테이너환경 등)을 수락하려면 해당 설정을 수정해야 한다.<br/>
     - 해결방안: 
