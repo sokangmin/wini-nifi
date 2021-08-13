@@ -1,4 +1,4 @@
-# LDAP 설치방법
+# node export 설치방법
 이 글은 Apache NiFi의 모니터링 대시보드에 사용할 prometheus node export설치방법에 대해 설명한다. <br/>
 - OS : CentOS 7
 
