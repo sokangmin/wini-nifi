@@ -19,11 +19,12 @@ ENV NIFI_PID_DIR=${NIFI_HOME}/run
 ENV NIFI_LOG_DIR=${NIFI_HOME}/logs
 
 ADD docker/sh/ ${NIFI_BASE_DIR}/scripts/
+ADD docker/lib/ ${NIFI_HOME}/lib/
 RUN chmod -R +x ${NIFI_BASE_DIR}/scripts/*.sh
+RUN chmod -R 664 ${NIFI_HOME}/lib/*
 
 # Create necessary directories
 RUN mkdir -p ${NIFI_BASE_DIR} \
-    && chown -R nifi:nifi ${NIFI_BASE_DIR} \
     && apt-get update \
     && apt-get install -y jq xmlstarlet procps
     
