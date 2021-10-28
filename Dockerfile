@@ -7,4 +7,4 @@ FROM apache/nifi:1.14.0
 
 #WORKDIR /opt/nifi/nifi-current/
 
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
