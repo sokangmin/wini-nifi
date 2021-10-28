@@ -63,6 +63,9 @@ prop_replace 'nifi.analytics.connection.model.implementation'   "${NIFI_ANALYTIC
 prop_replace 'nifi.analytics.connection.model.score.name'       "${NIFI_ANALYTICS_MODEL_SCORE_NAME:-rSquared}"
 prop_replace 'nifi.analytics.connection.model.score.threshold'  "${NIFI_ANALYTICS_MODEL_SCORE_THRESHOLD:-.90}"
 
+# Set nifi.web.proxy.host property
+prop_replace 'nifi.web.proxy.host'                "${NIFI_WEB_PROXY_HOST:-}"
+
 . "${scripts_dir}/update_cluster_state_management.sh"
 
 # Check if we are secured or unsecured
@@ -80,9 +83,9 @@ case ${AUTH} in
         . "${scripts_dir}/update_login_providers.sh"
         ;;
     *)
-        if [ ! -z "${NIFI_WEB_PROXY_HOST}" ]; then
-            echo 'NIFI_WEB_PROXY_HOST was set but NiFi is not configured to run in a secure mode.  Will not update nifi.web.proxy.host.'
-        fi
+        #if [ ! -z "${NIFI_WEB_PROXY_HOST}" ]; then
+        #    echo 'NIFI_WEB_PROXY_HOST was set but NiFi is not configured to run in a secure mode.  Will not update nifi.web.proxy.host.'
+        #fi
         ;;
 esac
 
