@@ -4,3 +4,5 @@ USER nifi
 
 COPY docker/lib /opt/nifi/nifi-current/lib
 COPY docker/sh /opt/nifi/scripts
+
+ENTRYPOINT ["/bin/bash]
