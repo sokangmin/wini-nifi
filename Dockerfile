@@ -59,4 +59,3 @@ EXPOSE 8080 8443 10000 8000
 
 WORKDIR ${NIFI_HOME}
 
-ENTRYPOINT ["../scripts/start.sh"]
