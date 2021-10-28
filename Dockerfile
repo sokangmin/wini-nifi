@@ -19,9 +19,7 @@ ENV NIFI_PID_DIR=${NIFI_HOME}/run
 ENV NIFI_LOG_DIR=${NIFI_HOME}/logs
 
 ADD docker/sh/ ${NIFI_BASE_DIR}/scripts/
-ADD docker/lib/ ${NIFI_HOME}/lib/
 RUN chmod -R +x ${NIFI_BASE_DIR}/scripts/*.sh
-RUN chmod -R 664 ${NIFI_HOME}/lib/*
 
 # Create necessary directories
 RUN mkdir -p ${NIFI_BASE_DIR} \
@@ -33,7 +31,7 @@ RUN curl -fSL ${MIRROR_BASE_URL}/${NIFI_TOOLKIT_BINARY_PATH} -o ${NIFI_BASE_DIR}
     && echo "$(curl ${BASE_URL}/${NIFI_TOOLKIT_BINARY_PATH}.sha256) *${NIFI_BASE_DIR}/nifi-toolkit-${NIFI_VERSION}-bin.zip" | sha256sum -c - \
     && unzip ${NIFI_BASE_DIR}/nifi-toolkit-${NIFI_VERSION}-bin.zip -d ${NIFI_BASE_DIR} \
     && rm ${NIFI_BASE_DIR}/nifi-toolkit-${NIFI_VERSION}-bin.zip \
-    && mv ${NIFI_BASE_DIR}/nifi-toolkit-${NIFI_VERSION}/* ${NIFI_TOOLKIT_HOME} \
+    && mv ${NIFI_BASE_DIR}/nifi-toolkit-${NIFI_VERSION} ${NIFI_TOOLKIT_HOME} \
     && ln -s ${NIFI_TOOLKIT_HOME} ${NIFI_BASE_DIR}/nifi-toolkit-${NIFI_VERSION}
 
 # Download, validate, and expand Apache NiFi binary.
@@ -41,7 +39,7 @@ RUN curl -fSL ${MIRROR_BASE_URL}/${NIFI_BINARY_PATH} -o ${NIFI_BASE_DIR}/nifi-${
     && echo "$(curl ${BASE_URL}/${NIFI_BINARY_PATH}.sha256) *${NIFI_BASE_DIR}/nifi-${NIFI_VERSION}-bin.zip" | sha256sum -c - \
     && unzip ${NIFI_BASE_DIR}/nifi-${NIFI_VERSION}-bin.zip -d ${NIFI_BASE_DIR} \
     && rm ${NIFI_BASE_DIR}/nifi-${NIFI_VERSION}-bin.zip \
-    && mv ${NIFI_BASE_DIR}/nifi-${NIFI_VERSION}/* ${NIFI_HOME} \
+    && mv ${NIFI_BASE_DIR}/nifi-${NIFI_VERSION} ${NIFI_HOME} \
     && mkdir -p ${NIFI_HOME}/conf \
     && mkdir -p ${NIFI_HOME}/database_repository \
     && mkdir -p ${NIFI_HOME}/flowfile_repository \
@@ -51,6 +49,9 @@ RUN curl -fSL ${MIRROR_BASE_URL}/${NIFI_BINARY_PATH} -o ${NIFI_BASE_DIR}/nifi-${
     && mkdir -p ${NIFI_LOG_DIR} \
     && ln -s ${NIFI_HOME} ${NIFI_BASE_DIR}/nifi-${NIFI_VERSION}
     
+ADD docker/lib/ ${NIFI_HOME}/lib/
+RUN chmod -R 664 ${NIFI_HOME}/lib/*
+
 # Clear nifi-env.sh in favour of configuring all environment variables in the Dockerfile
 #RUN echo "#!/bin/sh\n" > $NIFI_HOME/bin/nifi-env.sh
 
