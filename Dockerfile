@@ -53,10 +53,11 @@ ADD docker/lib/ ${NIFI_HOME}/lib/
 RUN chmod -R 664 ${NIFI_HOME}/lib/*
 
 # Clear nifi-env.sh in favour of configuring all environment variables in the Dockerfile
-#RUN echo "#!/bin/sh\n" > $NIFI_HOME/bin/nifi-env.sh
+RUN echo "#!/bin/sh\n" > $NIFI_HOME/bin/nifi-env.sh
 
 # Web HTTP(s) & Socket Site-to-Site Ports
 EXPOSE 8080 8443 10000 8000
 
 WORKDIR ${NIFI_HOME}
 
+ENTRYPOINT ["../scripts/start.sh"]
